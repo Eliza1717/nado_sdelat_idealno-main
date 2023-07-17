@@ -17,6 +17,14 @@ html {
   background-color: #fec7ee;
 }
 
+.page::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background-color: rgba(255 255 255 / 0.3);
+}
+
 .page__video {
   position: absolute;
   inset: 0;
@@ -36,10 +44,38 @@ html {
   z-index: 1;
 }
 
-.page::before {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  inset: 0;
-  background-color: rgba (255, 255, 255);
+.page__title::after {
+  position: relative;
+  content: '*';
 }
+
+.page__title:hover {
+  color: #4c4c4c;
+  cursor: default;
+}
+
+.page__title:hover::before {
+  content:'На самом деле нет.\AВажнее &mdash; научиться ошибаться.';
+  position: absolute;
+  top: 180px;
+  max-width: 760px;
+  right: 20px;
+  padding-left: 44px;
+  padding-right: 44px;
+  padding-left: 36px;
+  padding-bottom: 36px;
+  border: 2px solid #000;
+  box-shadow: 0 12px 0 #000;
+  border-radius: 20px;
+  color: #000;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: initial;
+  background-color: #fff;
+  white-space: pre;
+
+}
+
