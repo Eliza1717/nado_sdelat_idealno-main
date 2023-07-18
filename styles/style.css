@@ -18,10 +18,10 @@ html {
 }
 
 .page::before {
-  content: '';
+  content: "";
   position: absolute;
-  z-index: 1;
   inset: 0;
+  z-index: 1;
   background-color: rgba(255 255 255 / 0.3);
 }
 
@@ -35,18 +35,18 @@ html {
 }
 
 .page__title {
-  letter-spacing: 4.06px;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 auto;
-  max-width: 720px;
-  font-size: 116px;
   z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 116px;
+  letter-spacing: 4.06px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .page__title::after {
+  content: "*";
   position: relative;
-  content: '*';
 }
 
 .page__title:hover {
@@ -55,18 +55,15 @@ html {
 }
 
 .page__title:hover::before {
-  content:'На самом деле нет.\AВажнее &mdash; научиться ошибаться.';
+  content: "На самом деле нет.\AВажнее &mdash; научиться ошибаться.";
   position: absolute;
   top: 180px;
-  max-width: 760px;
   right: 20px;
-  padding-left: 44px;
-  padding-right: 44px;
-  padding-left: 36px;
-  padding-bottom: 36px;
+  max-width: 760px;
   border: 2px solid #000;
-  box-shadow: 0 12px 0 #000;
   border-radius: 20px;
+  padding: 36px 44px;
+  box-shadow: 0 12px 0 #000;
   color: #000;
   font-weight: normal;
   font-size: 35px;
@@ -76,6 +73,4 @@ html {
   text-transform: initial;
   background-color: #fff;
   white-space: pre;
-
 }
-
